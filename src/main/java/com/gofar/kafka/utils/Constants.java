@@ -2,5 +2,6 @@ package com.gofar.kafka.utils;
 
 public class Constants {
 
-    public static String TOPIC_NAME = "demo-topic";
+    public static String PRODUCT_TOPIC_NAME = "product-topic";
+    public static String CLIENT_TOPIC_NAME = "client-topic";
 }
