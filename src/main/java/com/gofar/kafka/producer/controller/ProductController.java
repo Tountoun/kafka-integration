@@ -19,7 +19,7 @@ public class ProductController {
     @PostMapping
     public ResponseEntity<Response> saveProduct(@RequestBody ProductDto productDto) {
         Response response = new Response();
-        producerService.publishData(Mapper.productDtoToProduct(productDto));
+        producerService.publishProductData(Mapper.productDtoToProduct(productDto));
         return ResponseEntity.ok(response);
     }
 
@@ -31,7 +31,7 @@ public class ProductController {
         product.setName("Car");
         product.setQuantity(5);
         product.setReference("5ZTA333");
-        producerService.publishData(product);
+        producerService.publishProductData(product);
         return ResponseEntity.ok(response);
     }
 }

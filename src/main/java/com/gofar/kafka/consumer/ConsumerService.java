@@ -1,6 +1,6 @@
 package com.gofar.kafka.consumer;
 
-import com.gofar.kafka.utils.TopData;
+import com.gofar.kafka.producer.model.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -14,7 +14,7 @@ public class ConsumerService {
     private final Logger log = LoggerFactory.getLogger(ConsumerService.class);
 
     @KafkaListener(topics = "demo-topic", groupId = "demo-group")
-    public void consumeData(Object data) {
-        log.info("Consume data from Kafka topic :: {}, and content is :: {}", TOPIC_NAME, data);
+    public void consumeProductData(Product data) {
+        log.info("Consume data from Kafka topic :: {}, and content is :: {}", TOPIC_NAME, data.toString());
     }
 }
