@@ -1,7 +1,7 @@
 package com.gofar.kafka.producer.controller;
 
 import com.gofar.kafka.dto.ClientDto;
-import com.gofar.kafka.producer.ProducerService;
+import com.gofar.kafka.producer.service.ProducerService;
 import com.gofar.kafka.producer.model.Client;
 import com.gofar.kafka.utils.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;

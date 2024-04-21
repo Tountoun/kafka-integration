@@ -1,8 +1,6 @@
 package com.gofar.kafka;
 
-import com.gofar.kafka.producer.ProducerService;
-import com.gofar.kafka.producer.controller.ClientController;
-import com.gofar.kafka.producer.controller.ProductController;
+import com.gofar.kafka.producer.service.ProducerService;
 import com.gofar.kafka.producer.model.Client;
 import com.gofar.kafka.producer.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;

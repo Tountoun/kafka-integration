@@ -1,4 +1,4 @@
-package com.gofar.kafka.producer;
+package com.gofar.kafka.producer.service;
 
 import com.gofar.kafka.producer.model.Client;
 import com.gofar.kafka.producer.model.Product;
