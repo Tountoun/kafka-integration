@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/products")
 public class ProductController {
 
-    @Autowired
     private ProducerService producerService;
 
     @PostMapping
@@ -27,5 +26,9 @@ public class ProductController {
         product.setId(id);
         producerService.publishProductData(product);
         return ResponseEntity.ok("Product updated successfully");
+    }
+
+    public void setProducerService(ProducerService producerService) {
+        this.producerService = producerService;
     }
 }

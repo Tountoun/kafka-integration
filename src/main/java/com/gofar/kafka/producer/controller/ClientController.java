@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/clients")
 public class ClientController {
 
-    @Autowired
     private ProducerService producerService;
 
     @PostMapping
@@ -29,4 +28,7 @@ public class ClientController {
         return ResponseEntity.ok("Client updated successfully");
     }
 
+    public void setProducerService(ProducerService producerService) {
+        this.producerService = producerService;
+    }
 }
